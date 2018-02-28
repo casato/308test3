@@ -5,7 +5,7 @@
   <version>0.0.1-SNAPSHOT</version>
     <name>308test3</name>
   <build>
-    <sourceDirectory>src</sourceDirectory>
+    <sourceDirectory>src/main</sourceDirectory>
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
