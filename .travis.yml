@@ -10,7 +10,7 @@ addons:
 jdk:
    - oraclejdk8
 script: 
-   - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent package sonar:sonar
+   - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent package sonar:sonar -Dsonar.hos.url=https://sonarcloud.io -Dsonar.organization=csc308 -Dsonar.login=786b8964c8c0a9f2855eaf71fc9e306a9402e0b8 -Dsonar.branch=master 
 cache:
    directories:
       - '$HOME/.m2/repository'
