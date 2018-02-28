@@ -3,4 +3,4 @@
 mvn sonar:sonar \
   -Dsonar.organization=csc308 \
   -Dsonar.host.url=https://sonarcloud.io \
-  -Dsonar.login=6a1a15bec2e1a13ce0941ff9c54bee09637a7819
+  -Dsonar.login=786b8964c8c0a9f2855eaf71fc9e306a9402e0b8
