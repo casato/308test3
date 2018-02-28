@@ -1,0 +1,21 @@
+language: java
+sudo: false
+install: true
+
+addons:
+   sonarcloud:
+      organization: "csc308"
+      token:
+         secure: "439d274c235b5495e606d970059789551e2b694c"
+jdk:
+   - oraclejdk8
+script: 
+   - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent package sonar:sonar
+   - bash sonar.sh
+
+
+cache:
+   directories:
+      - '$HOME/.m2/repository'
+      - '$HOME/.sonar/cache'
+
